@@ -1,0 +1,2 @@
+#!/bin/bash
+cat sshd_config | grep -v "#"#!/bin/bash
