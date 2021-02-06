@@ -8,15 +8,15 @@ do
 	case $i in
 	4)
 		echo $i
-		echo bad luck China
+		echo bad luck from China
 		;;
 	8)
 		echo $i
-		echo good luck Japan
+		echo good luck from Japan
 		;;
 	17)
 		echo $i
-		echo good luck Italy
+		echo good luck from Italy
 		;;
 	*)
 		echo $i
