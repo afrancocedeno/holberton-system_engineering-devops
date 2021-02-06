@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Script that gives you information about the holbertonschool file.
-
+# -s test operator relates the size of the file if empty
 file_name="./holbertonschool"
 if [ -e "$file_name" ]
 then
