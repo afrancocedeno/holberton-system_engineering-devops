@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#
+for file_names in $(ls -1 | cut -d "-" -f 2)
+do
+	echo "$file_names"
+done
