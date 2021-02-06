@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
+# Write a Bash script that displays:
 #
-for file_names in $(find ./* | cut -d "-" -f 2)
+#    The content of the current directory
+#    In a list format
+#    Where only the part of the name after the first dash is displayed (refer to the example)
+#
+# it can be done as follows in a simply way:
+# for file_name in *
+# do
+# 	ehco "$file_name" | cut -d "-" -f 2
+# done
+
+for file_name in $(find * ! \( -type d ! -name . -prune \) | cut -d "-" -f 2)
 do
-	echo "$file_names"
+	echo "$file_name"
 done
