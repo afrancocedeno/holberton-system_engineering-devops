@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+# 10 times Holberton School but for 9th displays Hi
+# if [CONDITION]
+# then
+#	[COMMANDS]
+# else
+#	[COMMANDS]
+#
 i=0
 while [ $i -lt 10 ]
 do
