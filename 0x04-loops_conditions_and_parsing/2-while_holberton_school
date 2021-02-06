@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times
+# Only by using while loop
+#
+# This can be done by also:
+# or using numbers as follows:
+# ((i=i+1)) = i=$((i+1)) -------> instead of using "let expr", use (( expr ))
+# numbers can also be writen as strings with double quotes or single quotes
+i='0'
+while [ $i -lt '10' ]
+do
+	echo Holberton School
+	i=$((i+1))
+done
