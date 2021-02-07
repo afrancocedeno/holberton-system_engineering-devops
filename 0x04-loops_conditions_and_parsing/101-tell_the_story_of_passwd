@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Bash script that displays the content of the file /etc/passwd
+# see man 5 passwd
+# passwd file fields:
+	# field 1: USERNAME
+	# field 2: PASSWORD
+	# field 3: USER_ID
+	# field 4: GROUP_ID
+	# field 5: USER ID INFO
+	# field 6: HOME_DIRECTORY
+	# field 7: COMMAND/SHELL
+while IFS=: read -r field_1 field_2 field_3 field_4 field_5 field_6 field_7
+do
+	echo "The user $field_1 is part of the $field_4 gang, lives in $field_6 and rides $field_7. $field_3's place is protected by the passcode $field_2, more info about the user here: $field_5"
+done < /etc/passwd
