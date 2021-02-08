@@ -13,4 +13,4 @@
 xu: every process on the system using BSD syntax.
 #	-f: full format listing.
 # source: man ps
-ps -a -u -x -f
+ps -aux -f
