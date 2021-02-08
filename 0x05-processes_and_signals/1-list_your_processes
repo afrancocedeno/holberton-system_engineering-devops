@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Bash script that displays a list of currently running processes.
+#
+# FYI
+#	tty stands for teletype, which is used for verify if you are
+#	working on a terminal. in other words, it prints the file name
+#	of the terminal connected to standard input.
+#
+#	[OPTIONS]
+#	-a: all process
+#	x: all users
+#	u: users information
+xu: every process on the system using BSD syntax.
+#	-f: full format listing.
+# source: man ps
+ps -a -u -x -f
