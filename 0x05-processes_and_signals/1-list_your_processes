@@ -10,7 +10,7 @@
 #	-a: all process
 #	x: all users
 #	u: users information
-xu: every process on the system using BSD syntax.
+#	xu: every process on the system using BSD syntax.
 #	-f: full format listing.
 # source: man ps
-ps -aux -f
+ps -a -u -x -f
