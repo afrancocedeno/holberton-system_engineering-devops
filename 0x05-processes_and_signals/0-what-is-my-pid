@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Bash script that displays its own PID.
+# Solution 1:
+# 	echo $$ 	--> $$ internal varieble shows the process ID for the script(shell in this case)
+#	echo $BASHPID	--> Obvious
+# source: https://www.networkworld.com/article/3387154/working-with-variables-on-linux.html
+ps | pgrep bash | cut -d " " -f1 | head -n 1
