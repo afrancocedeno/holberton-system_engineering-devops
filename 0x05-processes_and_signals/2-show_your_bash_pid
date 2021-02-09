@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Bash script that displays lines containing the bash process using previous command
+# shellcheck disable=SC2009
+./1-list_your_processes | grep bash
