@@ -3,7 +3,7 @@
 # Basics
 
 * /holberton/ match with:
-	holberton
+	* * holberton
 * /Holbert.n/ match with:
 	Holbert.n
 	Holberton
