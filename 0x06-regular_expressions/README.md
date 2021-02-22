@@ -11,10 +11,10 @@
 	* Holberttn
 
 # Script execution
-...
+```
 ./script_name.rb pattern_string
-...
-# Trainig curve
+````
+# Project steps
 
 * task 0
 * task 1
