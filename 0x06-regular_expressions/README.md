@@ -10,6 +10,10 @@
 * /Holbert*n/ match with:
 	* Holberttn
 
+# Script execution
+...
+./script_name.rb pattern_string
+...
 # Trainig curve
 
 * task 0
@@ -17,5 +21,7 @@
 	* _*a{3,6}*_ Between 3 and 6 of "a" (without space inside curly brackets{})
 * task 2
 	* _*a?*_ Zero or one "a".
+
 # Sources
 https://rubular.com/
+
