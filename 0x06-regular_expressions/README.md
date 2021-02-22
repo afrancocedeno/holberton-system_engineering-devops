@@ -3,9 +3,9 @@
 # Basics
 
 * /holberton/ match with:
-	* * holberton
+	* holberton
 * /Holbert.n/ match with:
-	Holbert.n
-	Holberton
+	* Holbert.n
+	* Holberton
 * /Holbert*n/ match with:
-	Holberttn
+	* Holberttn
