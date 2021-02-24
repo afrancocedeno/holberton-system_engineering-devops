@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo -e "127.0.0.2 \t localhost" >> /etc/hosts
+echo -e "8.8.8.8 \t facebook.com" >> /etc/hosts
