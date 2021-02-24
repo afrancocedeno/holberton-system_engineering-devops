@@ -28,5 +28,8 @@ Global interconected computer network
 source: man netstat
 
 * task 5
+https://www.google.com/search?client=firefox-b-d&q=ping+n+times+inbash
+hows to conditionals in bash
+how to capture error message in bash
 `-c` stop after
 https://www.google.com/search?client=firefox-b-d&q=if+no+arguments+in+bash
