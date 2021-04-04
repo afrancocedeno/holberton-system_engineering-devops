@@ -1,4 +1,5 @@
 # file create Puppet maniefest
+# soruce: t.ly/GsKg
 file { '/tmp/holberton' :
     ensure  => file,
     owner   => 'www-data',
