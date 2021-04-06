@@ -1,6 +1,3 @@
 # script that creates an RSA key pair.
-# -b number of bytes
-# -t key algorithm
-# -N new phrase
-# -f output key file
+# -b bytes, -t key algo, -N new phrase, -f output file
 ssh-keygen -b 4096 -t rsa -N betty -f holberton
