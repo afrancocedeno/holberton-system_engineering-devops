@@ -1,4 +1,4 @@
-# create an ssh key
+# script that creates an RSA key pair.
 # -b number of bytes
 # -t key algorithm
 # -N new phrase
