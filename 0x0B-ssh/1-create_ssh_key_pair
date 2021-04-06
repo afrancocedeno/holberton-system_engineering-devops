@@ -1,0 +1,6 @@
+# create an ssh key
+# -b number of bytes
+# -t key algorithm
+# -N new phrase
+# -f output key file
+ssh-keygen -b 4096 -t rsa -N betty -f holberton
