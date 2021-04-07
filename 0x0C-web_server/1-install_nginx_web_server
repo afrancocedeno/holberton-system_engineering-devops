@@ -2,4 +2,5 @@
 # script that instal nginx web server
 apt-get update
 apt-get -y install nginx
-echo "Holberton School for the win!" > index.nginx-debian.html
+service nginx start
+echo "Holberton School" > index.nginx-debian.html
