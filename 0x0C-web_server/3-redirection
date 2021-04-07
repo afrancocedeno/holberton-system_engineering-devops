@@ -2,3 +2,6 @@
 # using sed to replace after certain string
 # source: t.ly/Nqoc
 sed -i '/server_name _;/a \\trewrite ^/redirect_me$ https://www.youtube.com/watch?v=ZZ5LpwO-An4' /etc/nginx/sites-available/default
+
+# reset nginx
+/etc/init.d/nginx reload
