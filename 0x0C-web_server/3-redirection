@@ -9,7 +9,7 @@ chmod +x /var/www/html/index.nginx-debian.html
 
 # using sed to replace after certain string
 # source: t.ly/Nqoc
-sed -i '/server_name _;/a \\trewrite ^/redirect_me$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+sed -i '/server_name _;/a \\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
 
 chmod -x /var/www/html/index.nginx-debian.html
 
