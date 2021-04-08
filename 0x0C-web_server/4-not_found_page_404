@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# script that instal nginx web server
+echo "some error message" > /var/www/html/custom_404.html
+sed -i "/server_name _;/ a \\terror_page 404 /custom_404.html;" /etc/nginx/sites-available/default
+
+# reset nginx
+service nginx restart
