@@ -4,7 +4,7 @@ service nginx start
 echo "Ceci n'est pas une page" > /var/www/html/custom_404.html
 echo "" > /var/www/html/custom_404.html
 
-sed -i "/server_name _;/ a \\terror_page 404 /custom_404.html;" /etc/nginx/sites-available/default
+sed -i "/server_name _;/ a \\\terror_page 404 /custom_404.html;" /etc/nginx/sites-available/default
 
 # reset nginx
 service nginx restart
