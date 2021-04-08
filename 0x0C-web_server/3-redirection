@@ -2,12 +2,7 @@
 # script that instal nginx web server
 apt-get update
 apt-get -y install nginx
-service nginx start
 echo "Holberton School for the win!" > /var/www/html/index.nginx-debian.html
-
-# using sed to replace after certain string
-# source: t.ly/Nqoc
-sed -i '/server_name _;/a \\trewrite ^/redirect_me/* https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
-
-# reset nginx
+service nginx start
+sed -i "42i\ \trewrite ^/redirect_me/* https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-available/default
 service nginx restart
