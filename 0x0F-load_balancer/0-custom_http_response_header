@@ -7,7 +7,7 @@ apt -y install nginx
 HOSTVAR=$(cat /etc/hostname)
 
 # set the static hostname
-# hostnamectl set-hostname $HOSTVAR
+hostnamectl set-hostname $HOSTVAR
 
 # add the header with the host name in default file
 sed -i '/server_name _;/a \\tadd_header X-Served-By ${HOSTVAR};' /etc/nginx/sites-available/default
