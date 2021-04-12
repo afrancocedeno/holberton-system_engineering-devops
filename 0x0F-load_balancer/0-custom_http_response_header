@@ -2,5 +2,5 @@
 # ussing and append to sed and the header x-served with hostname
 apt update
 apt -y install nginx
-sed -i '/server_name _;/a \\\tadd_header X-Served-By "$hostname";' /etc/nginx/sites-available/default
+sed -i '/server_name _;/a \\tadd_header X-Served-By "$hostname";' /etc/nginx/sites-available/default
 /etc/init.d/nginx start
