@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# comment line
+add_header X-Served-By $hostname
