@@ -2,5 +2,15 @@
 # ussing and append to sed and the header x-served with hostname
 apt update
 apt -y install nginx
-sed -i '/server_name _;/a \\tadd_header X-Served-By "$hostname";' /etc/nginx/sites-available/default
+
+# save the hostname in a environment variable
+HOSTVAR=$(cat /etc/hostname)
+
+# set the static hostname
+# hostnamectl set-hostname $HOSTVAR
+
+# add the header with the host name in default file
+sed -i '/server_name _;/a \\tadd_header X-Served-By ${HOSTVAR};' /etc/nginx/sites-available/default
+
+# run nginx server
 /etc/init.d/nginx start
