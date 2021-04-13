@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# comment line
+apt-get update
+apt-get -y install haproxy
+hap_config="
+	frontend http_front
+		bind *:80
+		stats uri /haproxy?stats
+		default_backend http_back
+
+	backend http_back
+		balance roundrobin
+		server 2308-web-01 35.231.125.77:80 check
+		server 2208-web-02 34.73.53.25:80 check
+	"
+echo "$hap_config" >> /etc/haproxy/haproxy.cfg
+service haproxy start
