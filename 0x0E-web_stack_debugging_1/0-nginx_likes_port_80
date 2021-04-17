@@ -8,4 +8,4 @@ rm -rf /etc/nginx/sites-enable/default
 # ln usage: ls -sf SOURCE_FILE LINK_FILE
 ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enable/default
 
-service nginx reload
+service nginx restart
