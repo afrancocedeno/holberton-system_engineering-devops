@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# link the files from enable folder to available
+
+# ln -s symbolic link 
+# ln -f force if file already exists
+# ln usage: ls -sf SOURCE_FILE LINK_FILE
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enable/default
+
+service nginx reload
