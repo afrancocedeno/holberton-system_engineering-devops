@@ -2,7 +2,7 @@
 # link the files from enable folder to available
 
 # delete the file to overwrite the file 
-rm -rf /etc/nginx/sites-enable/default
+rm /etc/nginx/sites-enable/default
 
 # ln -s symbolic link 
 # ln usage: ls -sf SOURCE_FILE LINK_FILE
