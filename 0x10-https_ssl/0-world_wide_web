@@ -12,5 +12,6 @@ then
     done
 
 else
-    dig "$2.$1" | grep -A1 'ANSWER SECTION:' | awk {'print "The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]"'} | sed -n 2p
+    echo -n "The subdomain $2"
+    dig "$2.$1" | grep -A1 'ANSWER SECTION:' | awk '{ print " is a " $4 " record and points to " $5 }' | sed -n 2p
 fi
