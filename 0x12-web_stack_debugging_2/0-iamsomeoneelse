@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 # the other user is passed as an argument to script
+
+# users are located in the /etc/nginx/nginx.conf file
+
 sudo -u "$1" whoami
